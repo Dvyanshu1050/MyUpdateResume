@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu Kumar Maurya - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">DKM</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Divyanshu</span>
+                <div class="logo-dot"></div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Divyanshu</span>
+                        <span class="title-line highlight">Kumar Maurya</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate Full Stack Developer crafting digital experiences with Java, JavaScript, React.js, and modern web technologies. 
+                        Let's build something amazing together!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Work</span>
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/divyanshu-kumar-maurya-9316802a7" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:divyanshumaurya1050@gmail.com" class="social-link" data-tooltip="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <img src="/public/dev.jpg" alt="Divyanshu Kumar Maurya">
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Divyanshu Kumar Maurya</h3>
+                                <p>Full Stack Developer</p>
+                                <div class="status-badge">
+                                    <span class="status-dot"></span>
+                                    Available for Work
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="tech-icon" style="--delay: 0s">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="tech-icon" style="--delay: 0.5s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="tech-icon" style="--delay: 1s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="tech-icon" style="--delay: 1.5s">
+                                <i class="fas fa-database"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer with a love for creating innovative solutions</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Who I Am</h3>
+                            <p>I'm a final-year B.Tech CSE student with strong problem-solving skills and hands-on experience in building real-world web applications. My focus lies in developing responsive UIs and scalable backends using Java and JavaScript.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>What I Do</h3>
+                            <p>I specialize in full-stack development, creating seamless user experiences with modern technologies. From responsive frontends to robust backends, I bring ideas to life through clean, efficient code.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>My Goal</h3>
+                            <p>I'm actively seeking full-time roles or internships where I can contribute to impactful projects, collaborate with talented teams, and continue growing as a developer in a dynamic environment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="4">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2025">2022</div>
+                            <div class="stat-label">Expected Graduation</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">Commitment Level</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Hours Coding Daily</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Frontend -->
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <p>ES6+, async/await, DOM manipulation</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React.js</h3>
+        <p>Hooks, Context API, reusable components</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML & CSS</h3>
+        <p>Responsive layouts, Flexbox, Grid</p>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card">
+        <i class="fab fa-java"></i>
+        <h3>Java</h3>
+        <p>OOP concepts, backend development</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+        <p>Event-driven, non-blocking backend</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Express.js</h3>
+        <p>Middleware, REST APIs, routing</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-plug"></i>
+        <h3>RESTful APIs</h3>
+        <p>Design & integration with frontend</p>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>MySQL</h3>
+        <p>Schema design, joins, normalization</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-leaf"></i>
+        <h3>MongoDB</h3>
+        <p>NoSQL, aggregation, indexing</p>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git & GitHub</h3>
+        <p>Version control, team collaboration</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>VS Code</h3>
+        <p>Productive coding environment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animation Script (AOS Library) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Some of my recent work that I'm proud of</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Lenscraft Media -->
+      <div class="project-card featured">
+        <div class="project-image">
+          <img src="public/ChatGPT Image Sep 14, 2025, 07_18_45 PM.png" alt="Lenscraft Media">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/LENSCRAFT-MEDIA/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Portfolio Website</div>
+          <h3>Lenscraft Media</h3>
+          <p>A modern photography and media portfolio website showcasing elegant layouts and smooth UI.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizza 1st Trail -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="public/Screenshot 2025-09-14 191158.png" alt="Pizza Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/pizza1stTrail/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Landing Page</div>
+          <h3>Pizza 1st Trail</h3>
+          <p>A fun and responsive pizza restaurant landing page with appetizing visuals and modern layout.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arka Library -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="public/Screenshot 2025-09-14 191228.png" alt="Arka Library Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/Arka_Library_01/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Web Application</div>
+          <h3>Arka Library</h3>
+          <p>Library website for browsing books, resources, and interactive user-friendly design.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jewellery Shop -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="public/Screenshot 2025-09-14 191320.png" alt="Jewellery Shop">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/JewelleryShop/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">E-commerce</div>
+          <h3>Jewellery Shop</h3>
+          <p>Elegant jewellery e-commerce website design with stylish product showcases and responsive layout.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Springbyte -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/public/Screenshot 2025-09-15 165918.png" alt="Springbyte Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://springbyte.vercel.app" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Company Website </div>
+          <h3>Springbyte Software Services</h3>
+          <p>Professional software services website with modern design, smooth animations, and responsive UI.</p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Springbyte -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/public/Screenshot 2025-09-15 165611.png" alt="Mobile Springbyte Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/MobileSPRINGBYTE-SOFTWARE-SERVICES/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Mobile Website</div>
+          <h3>Springbyte Mobile</h3>
+          <p>Mobile-friendly version of Springbyte website optimized for smooth experience on small devices.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- News API -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4a6e7DdcbLcnCxu_2ouyyp9Wd19Foi2Zdw&s" alt="News API Web App">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/news-api/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="https://github.com/Dvyanshu1050/news-api" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Web Application</div>
+          <h3>News API Web App</h3>
+          <p>A dynamic news application that fetches real-time news using Fetch API and async/await.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Fetch API</span>
+            <span>HTML/CSS</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather App -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://i.ytimg.com/vi/w-V1pMrGAjc/maxresdefault.jpg" alt="Weather Forecast App">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/weatherApp/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="https://github.com/Dvyanshu1050/weatherApp" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Web Application</div>
+          <h3>Weather Forecast App</h3>
+          <p>Real-time weather app using OpenWeatherMap API with location-based forecasting and beautiful UI.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Weather API</span>
+            <span>Geolocation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Builders Designs -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://www.contractsspecialist.com.au/articles/wp-content/uploads/2021/09/Construction-Contract-Clauses-300x200.jpg" alt="Builders Design Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://dvyanshu1050.github.io/builders_design/" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="https://github.com/Dvyanshu1050/builders_design" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Landing Page (comeing soon)</div>
+          <h3>Builders Design</h3>
+          <p>Modern homepage layout for a construction/design company with responsive design and smooth effects.</p>
+          <div class="project-tech">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Air Buds -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://cdn.shopify.com/s/files/1/0506/6788/0604/files/Airbud_550_Web_Banner_600x600.jpg?v=1679396268" alt="Air Buds Website">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Landing Page (comeing soon)</div>
+          <h3>Air Buds Product Website </h3>
+          <p>Modern landing page with GSAP animations, smooth scrolling, and responsive design.</p>
+          <div class="project-tech">
+            <span>HTML/CSS</span>
+            <span>GSAP</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SwiftAir Clone -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://www.aviationtoday.com/wp-content/uploads/2020/03/Airplane_Stock_960.jpg" alt="SwiftAir Clone">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Web Application (comeing soon)</div>
+          <h3>SwiftAir Clone</h3>
+          <p>A fully responsive airline booking website clone built using HTML, CSS, and JavaScript.</p>
+          <div class="project-tech">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hospital & Library -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://docpulse.com/wp-content/uploads/2024/02/slider-small-1.jpg" alt="Management Systems">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-category">Desktop Application (comeing soon)</div>
+          <h3>Library & Hospital Management</h3>
+          <p>Comprehensive management systems built with Java and SQL featuring CRUD operations and authentication.</p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>SQL</span>
+            <span>JDBC</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My journey</span>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background and learning path</p>
+            </div>
+            
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <h3>Bachelor of Technology - BTech</h3>
+                        <h4>Computer Science Engineering</h4>
+                        <p class="institution">Oriental Group of Institutes, Bhopal</p>
+                        <p class="description">
+                            Currently pursuing B.Tech in Computer Science with focus on software development, 
+                            data structures, algorithms, and modern web technologies. Maintaining excellent academic 
+                            performance while working on practical projects.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Software Engineering</span>
+                            <span>Database Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Case Studies Section ================= -->
+<section class="case-studies" id="case-studies">
+  <div class="container">
+    <h2 class="section-title">Case Studies</h2>
+    <p class="section-subtitle">Some of my featured project breakdowns</p>
+
+    <div class="case-grid">
+
+      <!-- Pizza -->
+      <div class="case-card">
+        <h3>🍕 Pizza Ordering Website</h3>
+        <p><strong>Problem:</strong> Local food businesses lacked an online ordering system, causing customers to rely on calls and manual booking.</p>
+        <p><strong>Solution:</strong> Built a modern pizza ordering website with an interactive menu, cart system, and responsive design.</p>
+        <p><strong>Result:</strong> Improved customer convenience with online browsing & ordering, increasing sales potential.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      </div>
+
+      <!-- SpringByte -->
+      <div class="case-card">
+        <h3>💻 SpringByte Software Services</h3>
+        <p><strong>Problem:</strong> Client needed a professional online presence to showcase IT services but didn’t have a structured website.</p>
+        <p><strong>Solution:</strong> Designed and developed a clean, responsive website with service sections, contact form, and animated UI.</p>
+        <p><strong>Result:</strong> Boosted brand image and helped attract new clients through a professional portfolio site.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, GSAP</p>
+      </div>
+
+      <!-- Akra Library -->
+      <div class="case-card">
+        <h3>📚 Akra Library Management</h3>
+        <p><strong>Problem:</strong> Students and library staff faced issues with book availability, records, and borrowing management.</p>
+        <p><strong>Solution:</strong> Created a digital library management website with a catalog, user-friendly navigation, and search options.</p>
+        <p><strong>Result:</strong> Simplified library operations and made it easier for users to browse and borrow books online.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      </div>
+
+      <!-- LanceCraft -->
+      <div class="case-card">
+        <h3>🏗 LanceCraft (Construction Website)</h3>
+        <p><strong>Problem:</strong> The construction company lacked an engaging online platform to showcase its designs & services.</p>
+        <p><strong>Solution:</strong> Developed a responsive landing page with modern UI, smooth animations, and project showcase grid.</p>
+        <p><strong>Result:</strong> Helped the company build trust and attract more clients with a professional digital portfolio.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+      </div>
+
+      <!-- Jewellery -->
+      <div class="case-card">
+        <h3>💎 Jewellery Website</h3>
+        <p><strong>Problem:</strong> Jewellery business wanted an elegant online showcase to highlight its premium collection.</p>
+        <p><strong>Solution:</strong> Designed a luxury-themed responsive website with product highlights, gallery section, and smooth transitions.</p>
+        <p><strong>Result:</strong> Enhanced brand presence and improved customer engagement with a stylish online catalog.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's connect!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Bhopal, Madhya Pradesh, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>divyanshumaurya1050@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>divyanshu-kumar-maurya-9316802a7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h3>Ready to collaborate?</h3>
+                        <p>I'm always excited to work on new projects and meet fellow developers. Let's create something amazing together!</p>
+                        <div class="cta-buttons">
+                            <a href="mailto:divyanshumaurya1050@gmail.com" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Send Email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/divyanshu-kumar-maurya-9316802a7" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>Connect on LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span>Divyanshu Kumar Maurya</span>
+                    </div>
+                    <p>Full Stack Developer passionate about creating innovative digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/divyanshu-kumar-maurya-9316802a7" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:divyanshumaurya1050@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Divyanshu Kumar Maurya. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
