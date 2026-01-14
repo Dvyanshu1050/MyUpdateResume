@@ -1081,7 +1081,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-primary);
+    color:black;
     text-decoration: none;
     transition: var(--transition);
     font-size: 1.2rem;
@@ -1971,4 +1971,5 @@ section {
     font-size: 14px;
   }
 }
+
 
