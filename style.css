@@ -470,7 +470,7 @@ body {
     margin-bottom: 2.5rem;
     line-height: 1.7;
     max-width: 500px;
-    color: white;
+    color: black;
 }
 
 .hero-buttons {
@@ -1971,5 +1971,6 @@ section {
     font-size: 14px;
   }
 }
+
 
 
