@@ -1880,7 +1880,7 @@ section {
 /* Case Studies Section */
 .case-studies {
   padding: 80px 20px;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -1889,7 +1889,7 @@ section {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #111;
+  /* color: #111; */
   letter-spacing: 1px;
 }
 
