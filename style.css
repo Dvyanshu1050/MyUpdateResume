@@ -307,7 +307,7 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-    color: black;
+    
 }
 
 .hero-bg {
@@ -470,7 +470,7 @@ body {
     margin-bottom: 2.5rem;
     line-height: 1.7;
     max-width: 500px;
-    color: black;
+    
 }
 
 .hero-buttons {
