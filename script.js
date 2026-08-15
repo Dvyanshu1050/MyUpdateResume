@@ -209,7 +209,11 @@ function animateCounters() {
                 counter.textContent = Math.ceil(current);
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.textContent = target;
+                if (target === 20) {
+                    counter.textContent = target + "+";
+                } else {
+                    counter.textContent = target;
+                }
             }
         };
         
